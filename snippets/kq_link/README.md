@@ -1,13 +1,25 @@
-Switching to one_inventory with kq_link
-To use one_inventory as your inventory system with kq_link, follow these steps:
+﻿# How to use kq_link with one_inventory
 
-Remove the old kq_link – Delete the existing kq_link folder from your resources directory.
+Use this snippet to switch **kq_link** to a one_inventory-ready build.
 
-Download and install the new kq_link – Place the new version into your resources folder.
+## 1) Remove old resource
 
-Save your changes and restart the resource.
+Delete your current **kq_link** folder from your resources directory.
 
-kq_link will now use one_inventory as its inventory system.
+## 2) Install the snippet version
 
+Copy this snippet resource into your server resources:
+
+`snippets/kq_link/kq_link/`
+
+## 3) Restart resources
+
+Restart your server (or restart **one_inventory** and **kq_link**).
+
+## 4) Verify integration
+
+Check console for startup/export errors and test kq_link functionality in-game.
+
+If there are no errors, **kq_link** is now using **one_inventory**.
 
 script by **kuzquality**: https://kuzquality.com/

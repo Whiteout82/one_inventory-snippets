@@ -1,23 +1,43 @@
-To use **one_inventory** with **tk_evidence**, follow these steps:
+﻿# How to use tk_evidence with one_inventory
 
-1. Navigate to the following directory: ```tk_evidence\client\frameworks```
+Use this snippet to connect **tk_evidence** to **one_inventory**.
 
-2. Replace the files from the snippets `esx.lua`, and `qb.lua` with the ones in there
+## 1) Replace client framework files
 
-3. Navigate to the following directory: ```tk_evidence\client```
+Copy snippet files into:
 
-4. Replace the files from the snippets `main_editable.lua`, with the one in there
+`tk_evidence/client/frameworks/`
 
-5. Navigate to the following directory: ```tk_evidence\server\frameworks```
+Replace `esx.lua` and `qb.lua`.
 
-6. Replace the files from the snippets `esx.lua`, and `qb.lua` with the ones in there
+## 2) Replace client main file
 
-7. Navigate to the following directory: ```tk_evidence\server```
+Copy snippet file into:
 
-8. Replace the files from the snippets `main_editable.lua`, with the one in there
+`tk_evidence/client/main_editable.lua`
 
-9. Save the file and restart the server.
+## 3) Replace server framework files
 
-**tk_evidence** will now use **one_inventory**
+Copy snippet files into:
+
+`tk_evidence/server/frameworks/`
+
+Replace `esx.lua` and `qb.lua`.
+
+## 4) Replace server main file
+
+Copy snippet file into:
+
+`tk_evidence/server/main_editable.lua`
+
+## 5) Restart resources
+
+Restart your server (or restart **one_inventory** and **tk_evidence**).
+
+## 6) Verify integration
+
+Check console for framework/export errors and test evidence storage flows.
+
+If there are no errors, **tk_evidence** is now using **one_inventory**.
 
 script by **tkscripts**: https://tkscripts.com/

@@ -1,11 +1,25 @@
-To use **one_inventory** with **nass_lib**, follow these steps:
+﻿# How to use nass_lib with one_inventory
 
-1. Navigate to the following directory: `nass_lib\inventories`
+Use this snippet to connect **nass_lib** to **one_inventory**.
 
-2. Place the **one_inventory** bridge file/folder inside the `inventories` directory.
+## 1) Copy inventory bridge folder
 
-3. Save the file and restart the resource.
+From this repository, copy the folder:
 
-**nass_lib** will now use **one_inventory** as its inventory system.
+`snippets/nass_lib/one_inventory/`
+
+Into your **nass_lib** resource at:
+
+`nass_lib/inventories/`
+
+## 2) Restart resources
+
+Restart your server (or restart **one_inventory** and **nass_lib**).
+
+## 3) Verify integration
+
+Check console for bridge/export errors and test inventory-related features.
+
+If there are no errors, **nass_lib** is now using **one_inventory**.
 
 script by **nass**: https://store.nass.dev/

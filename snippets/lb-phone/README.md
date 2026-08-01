@@ -1,27 +1,38 @@
-To use **one_inventory** with **lb-phone**, follow these steps:
+﻿# How to use lb-phone with one_inventory
 
-1. Navigate to the following directory: `lb-phone\client\custom\uniquePhones`
+Use this snippet to connect **lb-phone** to **one_inventory**.
 
-2. Add the **one_inventory** client file in the folder.
+## 1) Add unique phone handlers
 
-3. Navigate to the following directory: `lb-phone\server\custom\uniquePhones`
+Copy the snippet files into these resource folders:
 
-4. Add the **one_inventory** server file in the folder.
+- `lb-phone/client/custom/uniquePhones/`
+- `lb-phone/server/custom/uniquePhones/`
 
-5. Navigate to the following directory: `lb-phone\client\custom\frameworks`
+## 2) Replace framework integration files
 
-6. replace all the files in there with the files we provide
+Copy the snippet framework files into:
 
-7. Navigate to the following directory: `lb-phone\server\custom\frameworks`
+- `lb-phone/client/custom/frameworks/`
+- `lb-phone/server/custom/frameworks/`
 
-8. replace all the files in there with the files we provide
+Replace existing files when prompted.
 
-9. Go to the config and look for **Config.Item.Inventory**. Make that **one_inventory**: `Config.Item.Inventory = "one_inventory"`
+## 3) Set inventory config
 
-10. make sure the Config.Item.Require is set to true
+In your lb-phone config, set:
 
-11. Save the file and restart the resource.
+- `Config.Item.Inventory = "one_inventory"`
+- `Config.Item.Require = true`
 
-**lb-phone** will now use **one_inventory** as its inventory system.
+## 4) Restart resources
+
+Restart your server (or restart **one_inventory** and **lb-phone**).
+
+## 5) Verify integration
+
+Check console for framework/export errors and test phone item behavior in-game.
+
+If there are no errors, **lb-phone** is now using **one_inventory**.
 
 script by **lbscripts**: https://lbscripts.com/

@@ -1,11 +1,35 @@
-To use **one_inventory** with **cdev_lib**, follow these steps:
+﻿# How to use cdev_lib with one_inventory
 
-1. Navigate to `cdev_lib\public\server`, remove the old **api.lua** file, and place the new **api.lua** file.
+Use this snippet to connect **cdev_lib** to **one_inventory**.
 
-2. Navigate to `cdev_lib\shared`, remove the old **auto_detect.lua** file, and place the new **auto_detect.lua** file.
+## 1) Replace server API file
 
-3. Save the file and restart the resource.
+Copy this file from the snippet:
 
-**cdev_lib** will now use **one_inventory** as its inventory system.
+`snippets/cdev_lib/public/server/api.lua`
+
+To your resource path:
+
+`cdev_lib/public/server/api.lua`
+
+## 2) Replace auto-detect file
+
+Copy this file from the snippet:
+
+`snippets/cdev_lib/shared/auto_detect.lua`
+
+To your resource path:
+
+`cdev_lib/shared/auto_detect.lua`
+
+## 3) Restart resources
+
+Restart your server (or restart **one_inventory** and **cdev_lib**).
+
+## 4) Verify integration
+
+Check console for API/bridge errors and test inventory-related features.
+
+If there are no errors, **cdev_lib** is now using **one_inventory**.
 
 script by **cDev**: https://fivem.cdev.shop/

@@ -1,26 +1,50 @@
-To use **one_inventory** with **tk_policejob**, follow these steps:
+﻿# How to use tk_policejob with one_inventory
 
-1. Navigate to the following directory: ```tk_policejob\client\frameworks```
+Use this snippet to connect **tk_policejob** to **one_inventory**.
 
-2. Replace the files from the snippets `esx.lua`, and `qb.lua` with the ones in there
+## 1) Replace client framework files
 
-3. Navigate to the following directory: ```tk_policejob\client```
+Copy snippet files into:
 
-4. Replace the files from the snippets `main_editable.lua`, with the one in there
+`tk_policejob/client/frameworks/`
 
-5. Navigate to the following directory: ```tk_policejob\server\frameworks```
+Replace `esx.lua` and `qb.lua`.
 
-6. Replace the files from the snippets `esx.lua`, and `qb.lua` with the ones in there
+## 2) Replace client main file
 
-7. Navigate to the following directory: ```tk_policejob\server```
+Copy snippet file into:
 
-8. Replace the files from the snippets `main_editable.lua`, with the one in there
+`tk_policejob/client/main_editable.lua`
 
-in the config make sure weapon names are the same as in the inventory
-not *WEAPON_FLASHLIGHT* but *weapon_flashlight*
+## 3) Replace server framework files
 
-9. Save the file and restart the server. otherwise you can not buy weapons
+Copy snippet files into:
 
-**tk_policejob** will now use **one_inventory** as its inventory/stash system.
+`tk_policejob/server/frameworks/`
+
+Replace `esx.lua` and `qb.lua`.
+
+## 4) Replace server main file
+
+Copy snippet file into:
+
+`tk_policejob/server/main_editable.lua`
+
+## 5) Check weapon name casing in config
+
+Make sure weapon names match one_inventory item names (lowercase style), for example:
+
+- `weapon_flashlight`
+- not `WEAPON_FLASHLIGHT`
+
+## 6) Restart resources
+
+Restart your server (or restart **one_inventory** and **tk_policejob**).
+
+## 7) Verify integration
+
+Check console for framework/export errors and test police shop/stash behavior in-game.
+
+If there are no errors, **tk_policejob** is now using **one_inventory**.
 
 script by **tkscripts**: https://tkscripts.com/

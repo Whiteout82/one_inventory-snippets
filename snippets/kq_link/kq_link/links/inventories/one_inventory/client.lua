@@ -1,9 +1,4 @@
-RegisterNetEvent('kq_link:client:one_inventory:openStash')
-AddEventHandler('kq_link:client:one_inventory:openStash', function(stashId)
-    exports.one_inventory:OpenInventory('stash', { id = stashId })
-end)
-
-if Link.inventory ~= 'one_inventory' then
+if Link.inventory ~= 'one_inventory' and Link.inventory ~= 'one' then
     return
 end
 
@@ -12,14 +7,11 @@ function GetItemCount(item)
 end
 
 function GetPlayerInventory()
-    local inv = exports.one_inventory:GetInventoryItems()
-    return NormalizeInventoryOutput(inv or {})
+    return NormalizeInventoryOutput(exports.one_inventory:GetInventoryItems() or {})
 end
 
 function GetInventoryItems()
-    return UseCache('kq_link:one_inventory:items', function()
-        return NormalizeItems(exports.one_inventory:GetAllItemDefinitions())
-    end, 60000)
+    return NormalizeItems(exports.one_inventory:GetAllItemDefinitions())
 end
 
 function GetInventoryImagePath()

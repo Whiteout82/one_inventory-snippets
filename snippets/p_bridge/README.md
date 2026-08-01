@@ -1,12 +1,25 @@
-Switching to one_inventory with p_bridge
-To use one_inventory as your inventory system with p_bridge, follow these steps:
+﻿# How to use p_bridge with one_inventory
 
-Remove the old p_bridge – Delete the existing p_bridge folder from your resources directory.
+Use this snippet to switch **p_bridge** to a one_inventory-ready build.
 
-Download and install the new p_bridge – Place the new version into your resources folder.
+## 1) Remove old resource
 
-Save your changes and restart the server.
+Delete your current **p_bridge** folder from your resources directory.
 
-p_bridge will now use one_inventory as its inventory system.
+## 2) Install the snippet version
 
-script by pscripts: https://pscripts-store.com/
+Copy this snippet resource into your server resources:
+
+`snippets/p_bridge/p_bridge/`
+
+## 3) Restart resources
+
+Restart your server (or restart **one_inventory** and **p_bridge**).
+
+## 4) Verify integration
+
+Check console for startup/export errors and test bridge functionality in-game.
+
+If there are no errors, **p_bridge** is now using **one_inventory**.
+
+script by **pscripts**: https://pscripts-store.com/

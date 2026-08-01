@@ -4,7 +4,7 @@ lua54 'yes'
 
 author 'KuzQuality.com | Kuzkay'
 description 'KuzQuality Link | Made to link existing frameworks and dependencies'
-version '1.21.5'
+version '1.27.0'
 
 server_scripts {
     -- RESOURCE BASE
@@ -26,6 +26,7 @@ server_scripts {
     'links/inventories/codem-inventory/server.lua',
     'links/inventories/core_inventory/server.lua',
     'links/inventories/ox_inventory/server.lua',
+    'links/inventories/one_inventory/server.lua',
     'links/inventories/ps-inventory/server.lua',
     'links/inventories/qs-inventory/server.lua',
     'links/inventories/origen_inventory/server.lua',
@@ -49,6 +50,7 @@ shared_scripts {
     'links/inventories/shared.lua',
 
     '@ox_lib/init.lua',
+    '@ox_core/lib/init.lua',
 }
 
 client_scripts {
@@ -61,6 +63,7 @@ client_scripts {
     -- INTERACTIONS
     'resource/interactions/client/utils.lua',
     'resource/interactions/client/target.lua',
+    'resource/interactions/client/tmc.lua',
     'resource/interactions/client/client.lua',
 
     -- MINIGAMES
@@ -83,17 +86,22 @@ client_scripts {
     'links/frameworks/qbcore/client.lua',
     'links/frameworks/qbox/client.lua',
     'links/frameworks/tmc/client.lua',
+    'links/frameworks/vrp/client.lua',
     'links/frameworks/standalone/client.lua',
 
 
     -- INVENTORIES
-    'links/inventories/ox_inventory/client.lua',
-    'links/inventories/qs-inventory/client.lua',
+    'links/inventories/ak47_inventory/client.lua',
+    'links/inventories/chezza/client.lua',
     'links/inventories/codem-inventory/client.lua',
+    'links/inventories/core_inventory/client.lua',
+    'links/inventories/jaksam/client.lua',
+    'links/inventories/one_inventory/client.lua',
+    'links/inventories/origen_inventory/client.lua',
+    'links/inventories/ox_inventory/client.lua',
+    'links/inventories/ps-inventory/client.lua',
+    'links/inventories/qs-inventory/client.lua',
     'links/inventories/tgiann-inventory/client.lua',
-
-    -- VEHICLE KEYS
-    'links/vehiclekeys/client/mrnewb.lua',
 
     -- EXPORTS
     'exports/client.lua',

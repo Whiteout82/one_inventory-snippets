@@ -1,13 +1,37 @@
-To use **one_inventory** with **okokShop**, follow these steps:
+﻿# How to use okokShop with one_inventory
 
-1. Navigate to the following directory: `okokShop`
+Use this snippet to connect **okokShop** to **one_inventory**.
 
-2. Place the **sv_utils** file inside the `okokShop` (replace or delete the original) directory.
+## 1) Replace utility file
 
-3. naviagte to 'okokShop' directory and open config.lua and make sure to change the image path directory to 'one_inventory/web/images' around line 83
+Copy this file from the snippet:
 
-4. Save the file and restart the resource.
+`snippets/okokShop/sv_utils.lua`
 
-**okokShop** will now use **one_inventory** as its inventory system.
+To your resource path:
+
+`okokShop/sv_utils.lua`
+
+Replace existing file when prompted.
+
+## 2) Update image path in config
+
+Open:
+
+`okokShop/config.lua`
+
+Set the image path directory to:
+
+`one_inventory/web/images`
+
+## 3) Restart resources
+
+Restart your server (or restart **one_inventory** and **okokShop**).
+
+## 4) Verify integration
+
+Check console for utility/export errors and test shop purchases in-game.
+
+If there are no errors, **okokShop** is now using **one_inventory**.
 
 script by **okokscripts**: https://okok.tebex.io/

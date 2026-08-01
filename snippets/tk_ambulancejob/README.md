@@ -1,23 +1,43 @@
-To use **one_inventory** with **tk_ambulancejob**, follow these steps:
+﻿# How to use tk_ambulancejob with one_inventory
 
-1. Navigate to the following directory: ```tk_ambulancejob\client\frameworks```
+Use this snippet to connect **tk_ambulancejob** to **one_inventory**.
 
-2. Replace the files from the snippets `esx.lua`, and `qb.lua` with the ones in there
+## 1) Replace client framework files
 
-3. Navigate to the following directory: ```tk_ambulancejob\client```
+Copy snippet files into:
 
-4. Replace the files from the snippets `main_editable.lua`, with the one in there
+`tk_ambulancejob/client/frameworks/`
 
-5. Navigate to the following directory: ```tk_ambulancejob\server\frameworks```
+Replace `esx.lua` and `qb.lua`.
 
-6. Replace the files from the snippets `esx.lua`, and `qb.lua` with the ones in there
+## 2) Replace client main file
 
-7. Navigate to the following directory: ```tk_ambulancejob\server```
+Copy snippet file into:
 
-8. Replace the files from the snippets `main_editable.lua`, with the one in there
+`tk_ambulancejob/client/main_editable.lua`
 
-9. Save the file and restart the server.
+## 3) Replace server framework files
 
-**tk_ambulancejob* will now use **one_inventory** as its inventory/stash system.
+Copy snippet files into:
+
+`tk_ambulancejob/server/frameworks/`
+
+Replace `esx.lua` and `qb.lua`.
+
+## 4) Replace server main file
+
+Copy snippet file into:
+
+`tk_ambulancejob/server/main_editable.lua`
+
+## 5) Restart resources
+
+Restart your server (or restart **one_inventory** and **tk_ambulancejob**).
+
+## 6) Verify integration
+
+Check console for framework/export errors and test stash/inventory features in-game.
+
+If there are no errors, **tk_ambulancejob** is now using **one_inventory**.
 
 script by **tkscripts**: https://tkscripts.com/

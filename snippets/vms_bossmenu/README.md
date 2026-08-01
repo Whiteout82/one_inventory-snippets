@@ -1,11 +1,23 @@
-To use **one_inventory** with **vms_bossmenu**, follow these steps:
+﻿# How to use vms_bossmenu with one_inventory
 
-1. Navigate to the following directory: ```vms_bossmenu\config\```
+Use this snippet to connect **vms_bossmenu** to **one_inventory**.
 
-2. Replace the snippets from the code blocks in the `config.lua`, `config.client.lua`, `config.server.lua`
+## 1) Update config files
 
-3. Save the file and restart the resource.
+Apply the snippet changes to these files:
 
-**vms_bossmenu** will now use **one_inventory** as its inventory/stash system.
+- `vms_bossmenu/config.lua`
+- `vms_bossmenu/config.client.lua`
+- `vms_bossmenu/config.server.lua`
+
+## 2) Restart resources
+
+Restart your server (or restart **one_inventory** and **vms_bossmenu**).
+
+## 3) Verify integration
+
+Check console for config/export errors and test boss inventory/stash features in-game.
+
+If there are no errors, **vms_bossmenu** is now using **one_inventory**.
 
 script by **vames**: https://www.vames-store.com/

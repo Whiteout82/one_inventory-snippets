@@ -22,7 +22,7 @@ Link = {
     --- 'vrp' -- You will need to add the necessary vrp imports to the fxmanifest.
     --- 'none' / 'standalone'
 
-    framework = 'qb-core',
+    framework = 'auto',
 
 
     -- Framework specific detail options (DO NOT REMOVE)
@@ -37,7 +37,8 @@ Link = {
 --- 'framework' -- The native framework inventory system will be used
 ---
 --- 'ox_inventory' -- Ox inventory system
---- 'qs-inventory' -- Quasar inventory system
+--- 'one_inventory' -- One Studios inventory system
+--- 'qs-inventory' -- Quasar inventory system (deprecated)
 --- 'ps-inventory' -- Project Sloth inventory system
 --- 'codem-inventory' -- CodeM inventory system
 --- 'core_inventory' -- Core inventory system (c8re)
@@ -46,7 +47,7 @@ Link = {
 --- 'chezza' -- Chezza inventory system
 --- 'tgiann-inventory' -- Tgiann inventory system
 --- 'jaksam_inventory' -- Jaksam's inventory system
-Link.inventory = 'ox_inventory'
+Link.inventory = 'auto'
 
 
 --- NOTIFICATION OPTIONS
@@ -61,7 +62,7 @@ Link.inventory = 'ox_inventory'
 --- '17mov' -- Notifications system made by 17Movement
 ---
 --- 'standalone' -- A standalone solution will be used for notifications (top left display)
-Link.notifications = 'framework'
+Link.notifications = 'standalone'
 
 
 ------------------------
@@ -70,14 +71,17 @@ Link.notifications = 'framework'
 Link.input = {
     target = {
         -- Whether to use a targeting system
-        enabled = true,
+        enabled = false,
         --- 'ox_target' -- ox targeting system
         --- 'qb-target' -- QBCore targeting system
         --- 'qtarget' -- The classic qtarget system commonly used in esx
         --- 'interact' -- Interact system by darktrovx
+        --- 'tmc' -- TMC Core interaction prompts
         ---
         --- You may also try entering the name of other targeting systems, as they often use very similar exports.
-        system = 'ox_target'
+        system = 'ox_target',
+
+        tmcDistance = 2.0 -- This is the extra distance for TMC core interaction prompts, only applicable if you are using TMC's interaction system
     },
 
     -- Only applicable when target is disabled
@@ -111,10 +115,12 @@ Link.input = {
 --- 'p_mdt' -- Dispatch system made by pScripts
 --- 'tk' -- Dispatch system made by TK Scripts
 --- 'origen' -- Dispatch system made by Origen (Origen-police)
+--- 'tmc' -- Dispatch system made by TMC
+--- 'lb' -- Dispatch system made by LB Scripts (lb-tablet)
 ---
 --- 'standalone' -- Built in dispatch system
 Link.dispatch = {
-    system = 'tk'
+    system = 'standalone'
 }
 
 
@@ -128,6 +134,8 @@ Link.dispatch = {
 --- 'jaksam' -- Jaksam's vehicle keys system
 --- 'mrnewb' -- MrNewbScripts vehicle keys system
 --- 'renewed' -- Renewed vehicle keys system
+--- 'cd_garage' -- Codesign's cd_garage vehicle keys system
+--- 'tmc' -- TMC vehicle keys system
 ---
 --- 'standalone' -- Set to this option if you are not using any vehicle keys systems
-Link.vehiclekeys = 'mrnewb'
+Link.vehiclekeys = 'auto'

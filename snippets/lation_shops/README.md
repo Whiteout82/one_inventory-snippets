@@ -1,11 +1,27 @@
-To use **one_inventory** with **lation_shops**, follow these steps:
+﻿# How to use lation_shops with one_inventory
 
-1. Navigate to the following directory: `lation_shops\bridge`
+Use this snippet to connect **lation_shops** to **one_inventory**.
 
-2. Replace the **bridge** server and client files with the new ones.
+## 1) Replace bridge files
 
-3. Save the file and restart the resource.
+From this repository, open:
 
-**lation_shops** will now use **one_inventory** as its inventory system.
+`snippets/lation_shops/bridge/`
+
+Copy the bridge files into your **lation_shops** resource at:
+
+`lation_shops/bridge/`
+
+Replace existing files when prompted.
+
+## 2) Restart resources
+
+Restart your server (or restart **one_inventory** and **lation_shops**).
+
+## 3) Verify integration
+
+Check console for bridge/export errors and test shop inventory actions in-game.
+
+If there are no errors, **lation_shops** is now using **one_inventory**.
 
 script by **lationscripts**: https://lationscripts.com/

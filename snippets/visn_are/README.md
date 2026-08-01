@@ -1,11 +1,33 @@
-To use **one_inventory** with **visn_are**, follow these steps:
+﻿# How to use visn_are with one_inventory
 
-1. Navigate to the following directory: `visn_are\script\configuration\server_config.lua` and set the m_customInventory.inventory_type to one_inventory
+Use this snippet to connect **visn_are** to **one_inventory**.
 
-2. Navigate to the following directory `visn_are\script\helpers` and replace the 2 files we provide in this snipped
+## 1) Set inventory type in server config
 
-3. Save the file and restart the resource.
+Open:
 
-**visn_are** will now use **one_inventory** as its inventory system.
+`visn_are/script/configuration/server_config.lua`
+
+Set:
+
+`m_customInventory.inventory_type = "one_inventory"`
+
+## 2) Replace helper files
+
+Copy the snippet helper files into:
+
+`visn_are/script/helpers/`
+
+Replace existing files when prompted.
+
+## 3) Restart resources
+
+Restart your server (or restart **one_inventory** and **visn_are**).
+
+## 4) Verify integration
+
+Check console for helper/export errors and test inventory interactions in-game.
+
+If there are no errors, **visn_are** is now using **one_inventory**.
 
 script by **veryinsanee**: https://store.veryinsanee.space/

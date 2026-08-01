@@ -1,11 +1,37 @@
-To use **one_inventory** with **17mov_Phone**, follow these steps:
+﻿# How to use 17mov_Phone with one_inventory
 
-1. Navigate to `17mov_Phone\bridge\inventory`, Place the **one_inventory** bridge file/folder inside the `inventory` directory.
+Use this snippet to connect **17mov_Phone** to **one_inventory**.
 
-2. Navigate to `17mov_Phone\configs`, remove the old **Bridge.lua** file, and place the new **Bridge.lua** file.
+## 1) Copy bridge inventory files
 
-3. Save the file and restart the resource.
+From this repository, copy the folder:
 
-**17mov_Phone** will now use **one_inventory** as its inventory system.
+`snippets/17mov_Phone/one_inventory/`
+
+Into your **17mov_Phone** resource at:
+
+`17mov_Phone/bridge/inventory/`
+
+Replace existing files when prompted.
+
+## 2) Replace Bridge.lua
+
+Copy this file from the snippet:
+
+`snippets/17mov_Phone/configs/Bridge.lua`
+
+To your resource path:
+
+`17mov_Phone/configs/Bridge.lua`
+
+## 3) Restart resources
+
+Restart your server (or restart **one_inventory** and **17mov_Phone**).
+
+## 4) Verify integration
+
+Check console for bridge/export errors and test inventory actions in-game.
+
+If there are no errors, **17mov_Phone** is now using **one_inventory**.
 
 script by **17movement**: https://17movement.net/

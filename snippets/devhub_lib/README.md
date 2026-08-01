@@ -1,11 +1,35 @@
-To use **one_inventory** with **devhub_lib**, follow these steps:
+﻿# How to use devhub_lib with one_inventory
 
-1. Navigate to `devhub_lib\modules\inventories` and place the **one_inventory** bridge file/folder inside the `inventories` directory.
+Use this snippet to connect **devhub_lib** to **one_inventory**.
 
-2. Navigate to `devhub_lib\core\shared`, remove the old **autoDetect.lua** file, and place the new **autoDetect.lua** file.
+## 1) Copy inventory bridge folder
 
-3. Save the file and restart the resource.
+From this repository, copy the folder:
 
-**devhub_lib** will now use **one_inventory** as its inventory system.
+`snippets/devhub_lib/one_inventory/`
+
+Into your **devhub_lib** resource at:
+
+`devhub_lib/modules/inventories/`
+
+## 2) Replace auto-detect file
+
+Copy this file from the snippet:
+
+`snippets/devhub_lib/core/shared/auto_detect.lua`
+
+To your resource path:
+
+`devhub_lib/core/shared/autoDetect.lua`
+
+## 3) Restart resources
+
+Restart your server (or restart **one_inventory** and **devhub_lib**).
+
+## 4) Verify integration
+
+Check console for bridge/export errors and test inventory-related features.
+
+If there are no errors, **devhub_lib** is now using **one_inventory**.
 
 script by **devhub_lib**: https://devhub.gg/

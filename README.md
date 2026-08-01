@@ -35,6 +35,7 @@ See the repository license for details.
 | `p_bridge` | 🟢 Tested & Working | 1.2.9
 | `rcore_prison` | 🔴 Needs More Testing only works for auto-detect?? | 2.3.0
 | `visn_are` | 🔴 Needs Testing | 4a0c6ad3
+| `mt_restaurants` | 🟠 Tested & Working (need more testing)| 3.1.7
 
 
 

@@ -25,3 +25,9 @@ exports('RemoveTargetZone', InputUtils.RemoveTargetZone)
 
 exports('GetPlayerInventory', GetPlayerInventory)
 exports('GetItemCount', GetItemCount)
+
+exports('GetInventoryItems', GetInventoryItems)
+exports('GetInventoryImagePath', GetInventoryImagePath)
+
+-- ROUTING BUCKET
+exports('GetRoutingBucket', GetRoutingBucket)

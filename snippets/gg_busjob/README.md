@@ -1,13 +1,35 @@
-To use **one_inventory** with **gg_busjob**, follow these steps:
+﻿# How to use gg_busjob with one_inventory
 
-1. Navigate to the following directory: `gg_busjob/core/bridge/inventory`
+Use this snippet to connect **gg_busjob** to **one_inventory**.
 
-2. Place the **one_inventory** bridge file/folder inside the `inventory` directory.
+## 1) Copy inventory bridge folder
 
-3. Open **gg_busjob/utility.lua** and set the inventory configuration to: `inventory = 'one_inventory'`
+From this repository, copy the folder:
 
-4. Save the file and restart the resource.
+`snippets/gg_busjob/one_inventory/`
 
-**gg_busjob** will now use **one_inventory** as its inventory system.
+Into your **gg_busjob** resource at:
+
+`gg_busjob/core/bridge/inventory/`
+
+## 2) Set inventory in config
+
+Open:
+
+`gg_busjob/utility.lua`
+
+Set:
+
+`inventory = 'one_inventory'`
+
+## 3) Restart resources
+
+Restart your server (or restart **one_inventory** and **gg_busjob**).
+
+## 4) Verify integration
+
+Check console for bridge/export errors and test inventory actions in-game.
+
+If there are no errors, **gg_busjob** is now using **one_inventory**.
 
 script by **ggstudio**: https://www.ggstudio.store/

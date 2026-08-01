@@ -1,17 +1,27 @@
-Switching to one_inventory with jim_bridge
-To use one_inventory as your inventory system with jim_bridge, follow these steps:
+﻿# How to use jim_bridge with one_inventory
 
-Remove the old jim_bridge – Delete the existing jim_bridge folder from your resources directory.
+Use this snippet to switch **jim_bridge** to a one_inventory-ready build.
 
-Download and install the new jim_bridge – Place the new version into your resources folder.
+## 1) Remove old resource
 
-Save your changes and restart the resource.
+Delete your current **jim_bridge** folder from your resources directory.
 
-jim_bridge will now use one_inventory as its inventory system.
+## 2) Install the snippet version
 
-script by jim: https://jimathy666.tebex.io/
+Copy this snippet resource into your server resources:
 
+`snippets/jim_bridge/jim_bridge/`
 
+## 3) Restart resources
 
+Restart your server (or restart **one_inventory** and **jim_bridge**).
 
-DISCLAIMER: THIS BRIDGE IS ONLY FOR OX_INVENTORY AND ONE_INVENTORY
+## 4) Verify integration
+
+Check console for startup/export errors and test bridge functionality in-game.
+
+If there are no errors, **jim_bridge** is now using **one_inventory**.
+
+script by **jim**: https://jimathy666.tebex.io/
+
+DISCLAIMER: This bridge is only for **ox_inventory** and **one_inventory**.
